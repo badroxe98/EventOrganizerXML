@@ -2,6 +2,7 @@
 
 <events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="Event.xsd">
+    <!-- Event number 1 -->
     <event>
         <event_name>Journée d'olympiades sportifs du club Emisport</event_name>
         <description>La journée des olympiades sportifs du club emisport s'organise chaque année à l'ecole mohammadia d'ingénieurs ,elle accueille plus de 1000personnes qui viennent s'affrontés dans différents sports et activités afin de gagner plusieurs récompenses.</description>
@@ -26,8 +27,8 @@
         </event_organizers>
         <event_sponsors>
             <sponsor type="company" >
-                <first_name>Karim Amjad</first_name>
-                <last_name>csqcqsc</last_name>
+                <first_name>Karim</first_name>
+                <last_name>Amjad</last_name>
                 <company_name>Maroc Telecom</company_name>
                 <phone_number type="fixe">0612457893</phone_number>
                 <email>karimAmjad@gmail.com</email>
@@ -53,87 +54,282 @@
         <number_team_members>12</number_team_members>
         <team_members>
             <member id="1">
-                <name>dazdazd</name>
-                <position>dazdazd</position>
-                <phone_number type="fixe">0645225122</phone_number>
-                <email>dzad@gmail.com</email>
+                <name>Anhari</name>
+                <position>Ayoub</position>
+                <phone_number type="fixe">0645227898</phone_number>
+                <email>AnhariAyoub@gmail.com</email>
             </member>
         </team_members>
         <event_schedule>
             <sub_event>
-                <description>sqscqsd</description>
-                <dates>2020-12-12</dates>
-                <location>sdqsddq</location>
+                <description>La journée debute par une conference à la salle polyvalente où plusieurs invités feront quelques interventions et discuteront sur differents thmes en relation avec les activités physiques sportives ,puis le lendemain débutera la journée avec differentes activités(jeux,sports etc...) au terrain de sport ainsi qu'au departement de genie civil.</description>
+                <dates>2020-03-18</dates>
+                <location>Terrain de sport et Departement de Genie civil.</location>
             </sub_event>
         </event_schedule>
     </event>
     <!-- Event number 2 -->
     <event>
-        <event_name>Journée d'olympiades sportifs du club Emisport</event_name>
-        <description>La journée des olympiades sportifs du club emisport s'organise chaque année à l'ecole mohammadia d'ingénieurs ,elle accueille plus de 1000personnes qui viennent s'affrontés dans différents sports et activités afin de gagner plusieurs récompenses.</description>
+        <event_name>Forum EmiEntreprise</event_name>
+        <description>Evènement incontournable de l’école Mohammadia d’Ingénieurs, le Forum EMI-Entreprise a lieu au mois d’Avril de chaque année rassemblant entreprises, décideurs, acteurs socioéconomique et chercheurs d’emplois.</description>
         <photo>event2</photo>
-        <type_of_event>sport</type_of_event>
+        <type_of_event>forum entreprise</type_of_event>
         <event_dates>
-            <begining_date>2019-03-15</begining_date>
-            <ending_date>2019-03-18</ending_date>
+            <begining_date>2019-04-15</begining_date>
+            <ending_date>2019-04-18</ending_date>
         </event_dates>
         <event_locations>
-            <location id="1">Departement Genie civil</location>
-            <location id="2">Terrain de sport</location>
+            <location id="1">Salle polyvalente</location>
+            <location id="2">Salle d'etude</location>
         </event_locations>
         <event_organizers>
             <organizer id="1">
-                <first_name>Anas</first_name>
-                <last_name>Malik</last_name>
+                <first_name>Othmane</first_name>
+                <last_name>kawtari</last_name>
                 <phone_number>0645781293</phone_number>
-                <email>anasmalik@gmail.com</email>
+                <email>othmanekawtari@gmail.com</email>
+                <address>27 rue lyon Rabat</address>
+            </organizer>
+        </event_organizers>
+        <event_sponsors>
+            <sponsor type="company" >
+                <first_name>Issam</first_name>
+                <last_name>kamal</last_name>
+                <company_name>Banque Poulaire</company_name>
+                <phone_number type="fixe">0612345784</phone_number>
+                <email>IssamKamal@gmail.com</email>
+                <address>15 avenue twin center Casablanca</address>
+            </sponsor>
+            <sponsor id="2" type="company">
+                <first_name>Reda</first_name>
+                <last_name>Mokhtari</last_name>
+                <company_name>ONCF</company_name>
+                <phone_number type="fixe">0612457421</phone_number>
+                <email>RedaMokhtari@gmail.com</email>
+                <address>41 avenue ibnou tachafin Casablanca</address>
+            </sponsor>
+        </event_sponsors>
+        <guests>
+            <guest id="1">
+                <name>Moulay Abbidi</name>
+                <position>Directeur de l'école Mohammmadia d'ingenieur</position>
+                <phone_number type="fixe">0645224187</phone_number>
+                <email>MoulayAbbidi@gmail.com</email>
+            </guest>
+        </guests>
+        <number_team_members>12</number_team_members>
+        <team_members>
+            <member id="1">
+                <name>Chafni zakaria</name>
+                <position>President</position>
+                <phone_number type="fixe">06452447852</phone_number>
+                <email>ChafniZakaria@gmail.com</email>
+            </member>
+        </team_members>
+        <event_schedule>
+            <sub_event>
+                <description>Le forum débute avec une presentation du forum et de son deroulement à la salle polyvalente qui accueillera plusieurs invités ainsi que l'integralité de la promotion de premiere et de deuxieme année ,puis s'en suivra le début du forum à la salle d'etude.</description>
+                <dates>2020-04-15</dates>
+                <location>Salle polyvalente et salle d'etude.</location>
+            </sub_event>
+        </event_schedule>
+    </event>
+    <!-- Event number 3 -->
+    <event>
+        <event_name>Show Academy</event_name>
+        <description>Cette évenement organisé par le club artistique EmiArts ,est une compétition qui accueille des centaines de talents venant de plusieurs écoles afin de presenter leur talent afin de gagner des récompenses.</description>
+        <photo>event3</photo>
+        <type_of_event>soirée</type_of_event>
+        <event_dates>
+            <begining_date>2019-05-15</begining_date>
+            <ending_date>2019-05-15</ending_date>
+        </event_dates>
+        <event_locations>
+            <location id="1">Salle polyvalente</location>
+        </event_locations>
+        <event_organizers>
+            <organizer id="1">
+                <first_name>Adam</first_name>
+                <last_name>youssfi</last_name>
+                <phone_number>0645787345</phone_number>
+                <email>Adamyoussfi@gmail.com</email>
                 <address>29 Hay ryad Rabat</address>
             </organizer>
         </event_organizers>
         <event_sponsors>
             <sponsor type="company" >
-                <first_name>Karim Amjad</first_name>
-                <last_name>csqcqsc</last_name>
-                <company_name>Maroc Telecom</company_name>
+                <first_name>Kawtar</first_name>
+                <last_name>Benani</last_name>
+                <company_name>Concervatoire de la jeunesse de Rabat</company_name>
                 <phone_number type="fixe">0612457893</phone_number>
-                <email>karimAmjad@gmail.com</email>
-                <address>15 avenue twin center Casablanca</address>
+                <email>kawtarBenani@gmail.com</email>
+                <address>20 rue alkawtar rabat</address>
             </sponsor>
             <sponsor id="2" type="company">
-                <first_name>Amine</first_name>
-                <last_name>benjeloun</last_name>
-                <company_name>Decathlon</company_name>
-                <phone_number type="fixe">06124579878</phone_number>
-                <email>AmineBenjeloun@gmail.com</email>
-                <address>33 rue al houdhoud Casablanca</address>
+                <first_name>Aymane</first_name>
+                <last_name>Moukhtari</last_name>
+                <company_name>Organisation Joud</company_name>
+                <phone_number type="fixe">0612789632</phone_number>
+                <email>AymaneMoukhtari@gmail.com</email>
+                <address>37 rue al houdhoud Casablanca</address>
             </sponsor>
         </event_sponsors>
         <guests>
             <guest id="1">
-                <name>Moufid Abderahmane</name>
-                <position>Ancien ministre de la jeunesse et des sports au Maroc</position>
-                <phone_number type="fixe">0645225122</phone_number>
-                <email>MoufidAbderahmane@gmail.com</email>
+                <name>Ibrahim Benjeloune</name>
+                <position>Professeur de chant au conservatoire de rabat</position>
+                <phone_number type="fixe">0645229988</phone_number>
+                <email>IbrahimBenjeloune@gmail.com</email>
             </guest>
         </guests>
-        <number_team_members>3</number_team_members>
+        <number_team_members>22</number_team_members>
         <team_members>
             <member id="1">
-                <name>dazdazd</name>
-                <position>dazdazd</position>
+                <name>Kaoutari Amina</name>
+                <position>Presidente</position>
+                <phone_number type="fixe">0645225133</phone_number>
+                <email>KaoutariAmina@gmail.com</email>
+            </member>
+        </team_members>
+        <event_schedule>
+            <sub_event>
+                <description>La competition débute avec les numéros des participants avec quelques pauses artistiques ,puis une annonce du podium à 22h30 et enfin une soirée Dj à partir de  23h.</description>
+                <dates>2020-05-15</dates>
+                <location>Salle polyvalente.</location>
+            </sub_event>
+        </event_schedule>
+    </event>
+    <!-- Event number 4 -->
+    <event>
+        <event_name>Journée Informatique CodEmi</event_name>
+        <description>La journée informatique CodEmi organisée par le club informatique Linux Party Emi ,est une competition qui accueille des centaines d'éleve ingenieur souhaitant montrer leurs compétences et ainsi pouvoir gagner des récompenses à la fin de la compétition.</description>
+        <photo>event4</photo>
+        <type_of_event>compétition</type_of_event>
+        <event_dates>
+            <begining_date>2019-04-27</begining_date>
+            <ending_date>2019-04-29</ending_date>
+        </event_dates>
+        <event_locations>
+            <location id="1">Salle polyvalente</location>
+            <location id="2">Nouveaux locaux</location>
+        </event_locations>
+        <event_organizers>
+            <organizer id="1">
+                <first_name>Othmane</first_name>
+                <last_name>Saih</last_name>
+                <phone_number>0645784798</phone_number>
+                <email>OthmaneSaih@gmail.com</email>
+                <address>29 Hay ryad Rabat</address>
+            </organizer>
+        </event_organizers>
+        <event_sponsors>
+            <sponsor type="company" >
+                <first_name>Said</first_name>
+                <last_name>idrissi</last_name>
+                <company_name>Technoplanet</company_name>
+                <phone_number type="fixe">061247498</phone_number>
+                <email>SaidIdrissi@gmail.com</email>
+                <address>13 avenue twin center Casablanca</address>
+            </sponsor>
+            <sponsor id="2" type="company">
+                <first_name>Aziz</first_name>
+                <last_name>hayani</last_name>
+                <company_name>Bestmark</company_name>
+                <phone_number type="fixe">0621458798</phone_number>
+                <email>AzizHayani@gmail.com</email>
+                <address>37 rue al houdhoud Casablanca</address>
+            </sponsor>
+        </event_sponsors>
+        <guests>
+            <guest id="1">
+                <name>Amine chorfi</name>
+                <position>Professeur du departement informatique à l'emi</position>
                 <phone_number type="fixe">0645225122</phone_number>
+                <email>AmineChorfi@gmail.com</email>
+            </guest>
+        </guests>
+        <number_team_members>15</number_team_members>
+        <team_members>
+            <member id="1">
+                <name>Ahmadi kamal</name>
+                <position>President</position>
+                <phone_number type="fixe">0645225134</phone_number>
                 <email>dzad@gmail.com</email>
             </member>
         </team_members>
         <event_schedule>
             <sub_event>
-                <description>sqscqsd</description>
-                <dates>2020-12-12</dates>
-                <location>sdqsddq</location>
+                <description>Le deroulement sera comme suit:une presentation de la compétition à la salle polyvalente puis debut des ateliers et de la competition aux nouveaux locaux.</description>
+                <dates>2020-04-27</dates>
+                <location>Salle polyvalente et Nouveaux locaux.</location>
             </sub_event>
         </event_schedule>
-        
     </event>
-
+    <!-- Event Number 5 -->
+    <event>
+        <event_name>Journée Economique</event_name>
+        <description>La journée Economique du club emieconomie s'organise chaque année à l'ecole mohammadia d'ingénieurs ,elle accueille plus de 100personnes qui viennent débattre sur des sujets en relation avec l'économie. </description>
+        <photo>event5</photo>
+        <type_of_event>journée</type_of_event>
+        <event_dates>
+            <begining_date>2019-03-09</begining_date>
+            <ending_date>2019-03-10</ending_date>
+        </event_dates>
+        <event_locations>
+            <location id="1">Grand Amphi</location>
+            <location id="2">Salle d'etude</location>
+        </event_locations>
+        <event_organizers>
+            <organizer id="1">
+                <first_name>Othmane</first_name>
+                <last_name>Alaoui</last_name>
+                <phone_number>0645785698</phone_number>
+                <email>OthmaneAlaoui@gmail.com</email>
+                <address>39 Hay ryad Rabat</address>
+            </organizer>
+        </event_organizers>
+        <event_sponsors>
+            <sponsor type="company" >
+                <first_name>Ahmad</first_name>
+                <last_name>Nawri</last_name>
+                <company_name>Attijariwafa Bank</company_name>
+                <phone_number type="fixe">0612455578</phone_number>
+                <email>AhmadNawri@gmail.com</email>
+                <address>45 boulevard zerktouni Casablanca</address>
+            </sponsor>
+            <sponsor id="2" type="company">
+                <first_name>Houda</first_name>
+                <last_name>laarbi</last_name>
+                <company_name>OCP</company_name>
+                <phone_number type="fixe">0612876532</phone_number>
+                <email>HoudaLaarbi@gmail.com</email>
+                <address>35 rue al houdhoud Rabat</address>
+            </sponsor>
+        </event_sponsors>
+        <guests>
+            <guest id="1">
+                <name>Naoufal rihab</name>
+                <position>Ancien ministre de l'economie et des finances</position>
+                <phone_number type="fixe">0645225122</phone_number>
+                <email>NaoufalRihab@gmail.com</email>
+            </guest>
+        </guests>
+        <number_team_members>12</number_team_members>
+        <team_members>
+            <member id="1">
+                <name>Othmani reda</name>
+                <position>President</position>
+                <phone_number type="fixe">0645228565</phone_number>
+                <email>OthmaniReda@gmail.com</email>
+            </member>
+        </team_members>
+        <event_schedule>
+            <sub_event>
+                <description>L'evenement se deroule comme suit :une présentation des activités au Grand Amphi,puis un débat de différents théme à la salle d'etude.</description>
+                <dates>2020-03-09</dates>
+                <location>Grand Amphi et Salle d'etude.</location>
+            </sub_event>
+        </event_schedule>
+    </event>
 
 </events>

@@ -56,7 +56,7 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:minLength value="3"/>
-            <xs:maxLength value="30"/>
+            <xs:maxLength value="70"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -64,7 +64,7 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:minLength value="3"/>
-            <xs:maxLength value="30"/>
+            <xs:maxLength value="70"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -72,7 +72,7 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:minLength value="3"/>
-            <xs:maxLength value="30"/>
+            <xs:maxLength value="70"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -116,7 +116,7 @@
           <xs:restriction base="xs:string">
             <xs:whiteSpace value="preserve"/>
             <xs:minLength value="2"/>
-            <xs:maxLength value="30"/>
+            <xs:maxLength value="70"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -160,7 +160,7 @@
           <xs:restriction base="xs:string">
             <xs:whiteSpace value="preserve"/>
             <xs:minLength value="2"/>
-            <xs:maxLength value="30"/>
+            <xs:maxLength value="70"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -169,7 +169,7 @@
           <xs:restriction base="xs:string">
             <xs:whiteSpace value="preserve"/>
             <xs:minLength value="2"/>
-            <xs:maxLength value="30"/>
+            <xs:maxLength value="70"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -245,13 +245,14 @@
       <xs:element name="type_of_event">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="journé"/>
+            <xs:enumeration value="journée"/>
             <xs:enumeration value="cultural"/>
             <xs:enumeration value="soirée"/>
             <xs:enumeration value="coaching"/>
             <xs:enumeration value="forum entreprise"/>
             <xs:enumeration value="sortie"/>
             <xs:enumeration value="sport"/>
+            <xs:enumeration value="compétition"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
