@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Event.xsd">
+    <event>
+        <event_name>Journée d'olympiades sportifs du club Emisport</event_name>
+        <description>La journée des olympiades sportifs du club emisport s'organise chaque année à l'ecole mohammadia d'ingénieurs ,elle accueille plus de 1000personnes qui viennent s'affrontés dans différents sports et activités afin de gagner plusieurs récompenses.</description>
+        <photo>event1</photo>
+        <type_of_event>sport</type_of_event>
+        <event_dates>
+            <begining_date>2019-03-15</begining_date>
+            <ending_date>2019-03-18</ending_date>
+        </event_dates>
+        <event_locations>
+            <location id="1">Departement Genie civil</location>
+            <location id="2">Terrain de sport</location>
+        </event_locations>
+        <event_organizers>
+            <organizer id="1">
+                <first_name>Anas</first_name>
+                <last_name>Malik</last_name>
+                <phone_number>0645781293</phone_number>
+                <email>anasmalik@gmail.com</email>
+                <address>29 Hay ryad Rabat</address>
+            </organizer>
+        </event_organizers>
+        <event_sponsors>
+            <sponsor type="company" >
+                <first_name>Karim Amjad</first_name>
+                <last_name>csqcqsc</last_name>
+                <company_name>Maroc Telecom</company_name>
+                <phone_number type="fixe">0612457893</phone_number>
+                <email>karimAmjad@gmail.com</email>
+                <address>15 avenue twin center Casablanca</address>
+            </sponsor>
+            <sponsor id="2" type="company">
+                <first_name>Amine</first_name>
+                <last_name>benjeloun</last_name>
+                <company_name>Decathlon</company_name>
+                <phone_number type="fixe">06124579878</phone_number>
+                <email>AmineBenjeloun@gmail.com</email>
+                <address>33 rue al houdhoud Casablanca</address>
+            </sponsor>
+        </event_sponsors>
+        <guests>
+            <guest id="1">
+                <name>Moufid Abderahmane</name>
+                <position>Ancien ministre de la jeunesse et des sports au Maroc</position>
+                <phone_number type="fixe">0645225122</phone_number>
+                <email>MoufidAbderahmane@gmail.com</email>
+            </guest>
+        </guests>
+        <number_team_members>12</number_team_members>
+        <team_members>
+            <member id="1">
+                <name>dazdazd</name>
+                <position>dazdazd</position>
+                <phone_number type="fixe">0645225122</phone_number>
+                <email>dzad@gmail.com</email>
+            </member>
+        </team_members>
+        <event_schedule>
+            <sub_event>
+                <description>sqscqsd</description>
+                <dates>2020-12-12</dates>
+                <location>sdqsddq</location>
+            </sub_event>
+        </event_schedule>
+    </event>
+    <!-- Event number 2 -->
+    <event>
+        <event_name>Journée d'olympiades sportifs du club Emisport</event_name>
+        <description>La journée des olympiades sportifs du club emisport s'organise chaque année à l'ecole mohammadia d'ingénieurs ,elle accueille plus de 1000personnes qui viennent s'affrontés dans différents sports et activités afin de gagner plusieurs récompenses.</description>
+        <photo>event2</photo>
+        <type_of_event>sport</type_of_event>
+        <event_dates>
+            <begining_date>2019-03-15</begining_date>
+            <ending_date>2019-03-18</ending_date>
+        </event_dates>
+        <event_locations>
+            <location id="1">Departement Genie civil</location>
+            <location id="2">Terrain de sport</location>
+        </event_locations>
+        <event_organizers>
+            <organizer id="1">
+                <first_name>Anas</first_name>
+                <last_name>Malik</last_name>
+                <phone_number>0645781293</phone_number>
+                <email>anasmalik@gmail.com</email>
+                <address>29 Hay ryad Rabat</address>
+            </organizer>
+        </event_organizers>
+        <event_sponsors>
+            <sponsor type="company" >
+                <first_name>Karim Amjad</first_name>
+                <last_name>csqcqsc</last_name>
+                <company_name>Maroc Telecom</company_name>
+                <phone_number type="fixe">0612457893</phone_number>
+                <email>karimAmjad@gmail.com</email>
+                <address>15 avenue twin center Casablanca</address>
+            </sponsor>
+            <sponsor id="2" type="company">
+                <first_name>Amine</first_name>
+                <last_name>benjeloun</last_name>
+                <company_name>Decathlon</company_name>
+                <phone_number type="fixe">06124579878</phone_number>
+                <email>AmineBenjeloun@gmail.com</email>
+                <address>33 rue al houdhoud Casablanca</address>
+            </sponsor>
+        </event_sponsors>
+        <guests>
+            <guest id="1">
+                <name>Moufid Abderahmane</name>
+                <position>Ancien ministre de la jeunesse et des sports au Maroc</position>
+                <phone_number type="fixe">0645225122</phone_number>
+                <email>MoufidAbderahmane@gmail.com</email>
+            </guest>
+        </guests>
+        <number_team_members>3</number_team_members>
+        <team_members>
+            <member id="1">
+                <name>dazdazd</name>
+                <position>dazdazd</position>
+                <phone_number type="fixe">0645225122</phone_number>
+                <email>dzad@gmail.com</email>
+            </member>
+        </team_members>
+        <event_schedule>
+            <sub_event>
+                <description>sqscqsd</description>
+                <dates>2020-12-12</dates>
+                <location>sdqsddq</location>
+            </sub_event>
+        </event_schedule>
+        
+    </event>
+
+
+</events>

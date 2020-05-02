@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="events" type="eventsType"/>
+  <xs:complexType name="event_datesType">
+    <xs:sequence>
+      <xs:element type="xs:date" name="begining_date"/>
+      <xs:element type="xs:date" name="ending_date"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="locationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="id" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="event_locationsType">
+    <xs:sequence>
+      <xs:element type="locationType" name="location" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="organizerType" mixed="false">
+    <xs:choice>
+      <xs:sequence>
+        <xs:element type="xs:string" name="first_name" minOccurs="0"/>
+        <xs:element type="xs:string" name="last_name" minOccurs="0"/>
+        <xs:element type="xs:string" name="phone_number" minOccurs="0"> </xs:element>
+        <xs:element name="email" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[a-zA-Z]([a-zA-Z0-9])*@([a-z.])+.([a-z])+"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element type="xs:string" name="address" minOccurs="0"/>
+      </xs:sequence>
+    </xs:choice>
+    <xs:attribute type="xs:int" name="id" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="event_organizersType">
+    <xs:sequence>
+      <xs:element type="organizerType" name="organizer" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="phone_numberType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="sponsorType" mixed="true">
+    <xs:sequence>
+      <xs:element name="first_name" minOccurs="1" maxOccurs="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="3"/>
+            <xs:maxLength value="30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="last_name" minOccurs="1" maxOccurs="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="3"/>
+            <xs:maxLength value="30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="company_name" minOccurs="1" maxOccurs="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="3"/>
+            <xs:maxLength value="30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="phone_number" minOccurs="1">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:positiveInteger">
+              <xs:attribute name="type" type="xs:string"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="email" minOccurs="1" maxOccurs="5">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z]([a-zA-Z0-9])*@([a-z.])+.([a-z])+"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="address" minOccurs="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="3"/>
+            <xs:maxLength value="70"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="type" use="optional"/>
+    <xs:attribute type="xs:int" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="event_sponsorsType">
+    <xs:sequence>
+      <xs:element type="sponsorType" name="sponsor" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="guestType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:whiteSpace value="preserve"/>
+            <xs:minLength value="2"/>
+            <xs:maxLength value="30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="position">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:whiteSpace value="preserve"/>
+            <xs:minLength value="2"/>
+            <xs:maxLength value="70"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="phone_number">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:positiveInteger">
+              <xs:attribute name="type" type="xs:string"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="email">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z]([a-zA-Z0-9])*@([a-z.])+.([a-z])+"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:int" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="guestsType">
+    <xs:sequence>
+      <xs:element type="guestType" name="guest" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="memberType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:whiteSpace value="preserve"/>
+            <xs:minLength value="2"/>
+            <xs:maxLength value="30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="position">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:whiteSpace value="preserve"/>
+            <xs:minLength value="2"/>
+            <xs:maxLength value="30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="phone_number">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:positiveInteger">
+              <xs:attribute name="type" type="xs:string"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="email">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z]([a-zA-Z0-9])*@([a-z.])+.([a-z])+"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:int" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="team_membersType">
+    <xs:sequence>
+      <xs:element type="memberType" name="member"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sub_eventType" mixed="false">
+    <xs:sequence>
+      <xs:element name="description" minOccurs="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="3"/>
+            <xs:maxLength value="3000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:date" name="dates" minOccurs="1"/>
+      <xs:element type="xs:string" name="location" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="event_scheduleType">
+    <xs:sequence>
+      <xs:element type="sub_eventType" name="sub_event" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eventType">
+    <xs:sequence>
+      <xs:element name="event_name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="3"/>
+            <xs:maxLength value="120"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="description">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="30"/>
+            <xs:maxLength value="3000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="photo">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="([a-zA-Z0-9])+"></xs:pattern>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      
+      <xs:element name="type_of_event">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="journé"/>
+            <xs:enumeration value="cultural"/>
+            <xs:enumeration value="soirée"/>
+            <xs:enumeration value="coaching"/>
+            <xs:enumeration value="forum entreprise"/>
+            <xs:enumeration value="sortie"/>
+            <xs:enumeration value="sport"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="event_datesType" name="event_dates"/>
+      <xs:element type="event_locationsType" name="event_locations"/>
+      <xs:element type="event_organizersType" name="event_organizers"/>
+      <xs:element type="event_sponsorsType" name="event_sponsors"/>
+      <xs:element type="guestsType" name="guests"/>
+      <xs:element type="xs:int" name="number_team_members"/>
+      <xs:element type="team_membersType" name="team_members"/>
+      <xs:element type="event_scheduleType" name="event_schedule"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eventsType">
+    <xs:sequence>
+      <xs:element type="eventType" name="event" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
