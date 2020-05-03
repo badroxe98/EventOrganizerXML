@@ -22,12 +22,13 @@ h3
 }
 .row
 {
-  margin-top: 50px;
+  margin-top: auto;
 
 }
 .event
 {
   height: 800px;
+  margin-top:auto;
 }
 img
 {

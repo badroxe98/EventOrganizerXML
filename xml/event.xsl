@@ -20,10 +20,10 @@
                                             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
             </head>
             <body>
-                <xsl:for-each select="events/event">
                 <div class="container-fluid overflow">
-                    <div class="row overflow">
-                        <div class=" col-4 event">
+                    <div class="row overflow-auto force-overflow">
+                        <xsl:for-each select="events/event">
+                        <div style="margin:10 10 10 10">
                             <div class="accordion" id="accordionExample">
                                 <h3 class="text-center"><xsl:value-of select="event_name"/></h3>
                                 <div class="card">
@@ -57,7 +57,7 @@
                                                 </li>
                                                 <li><strong>Lieu</strong> : <xsl:for-each select="event_locations/location">
                                                     <xsl:value-of select="."/>/
-                                                </xsl:for-each>></li>
+                                                </xsl:for-each></li>
                                                 <li><strong>Organisateur</strong> : 
                                                     <ul>
                                                         <li>Prenom : <xsl:value-of select="event_organizers/organizer/first_name"/></li>
@@ -175,9 +175,10 @@
                             </div>
                         </div>
                         </div>
+                        </xsl:for-each>
                     </div>
                 </div>
-                </xsl:for-each>
+                
                 
                 
                 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
