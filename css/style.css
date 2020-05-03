@@ -1,0 +1,37 @@
+.cardbody li
+{
+  text-decoration: none;
+  color:#00000f;
+
+}
+ul li:hover
+{
+  background-color: #f5f5f5;
+  color :black;
+}
+h3
+{
+  
+  font-family: "Lato", sans-serif;
+  text-align: center;
+
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #000000;
+}
+.row
+{
+  margin-top: 50px;
+
+}
+.event
+{
+  height: 800px;
+}
+img
+{
+  width: 266px;
+  margin: auto;
+  height: 100%;
+ }

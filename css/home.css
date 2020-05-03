@@ -1,0 +1,14 @@
+body
+{
+font-family:monospace;
+}
+h1,h2,h3,h5,h6
+{
+font-family:monospace;
+}
+#cardAlgorithm
+{
+ display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+}
